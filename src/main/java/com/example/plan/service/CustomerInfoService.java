@@ -12,9 +12,8 @@ public class CustomerInfoService {
     @Autowired
     private CustomerInfoMapper customerInfoMapper;
 
-    public CustomerInfo addCustomers(CustomerInfo customerInfo){
-    customerInfo=customerInfoMapper.add(customerInfo);
-      return customerInfo;
+    public void addCustomers(CustomerInfo customerInfo){
+  customerInfoMapper.add(customerInfo);
     }
 
     public List<CustomerInfo> allCustomers(){

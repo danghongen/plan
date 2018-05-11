@@ -12,15 +12,15 @@ public class DisabuseInfoService {
     @Autowired
     private DisabuseInfoMapper disabuseInfoMapper;
 
-    public List<DisabuseInfo> findallDisabuse(){
+    public List<DisabuseInfo> findAllDisabuse(){
    return this.disabuseInfoMapper.allDisabuse();
 
     }
 
-    public List<DisabuseInfo> doFindAllProblem(){
-        return  this.disabuseInfoMapper.findAllProblem();
+   public List<DisabuseInfo> doFindAllProblem(){
+       return  this.disabuseInfoMapper.findAllProblem();
 
-    }
+   }
 
     public DisabuseInfo doFindAnswer( DisabuseInfo disabuseInfo){
         disabuseInfo=this.disabuseInfoMapper.findAnswer(disabuseInfo);

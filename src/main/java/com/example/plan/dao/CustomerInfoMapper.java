@@ -8,7 +8,7 @@ import java.util.List;
 
 @Repository
 public interface CustomerInfoMapper {
-    CustomerInfo add(CustomerInfo customerInfo);
+    void add(CustomerInfo customerInfo);
     List<CustomerInfo> findCustomer();
     UserInfo findOne(String username);
 }

@@ -18,17 +18,17 @@ public class CustomerInfo {
 
     private String company;
 
-    private String myIncome;
+    private String income;
 
-    private String spouseIncome;
+    private String spouse_income;
 
-    private String familyAssets;
+    private String family_assets;
 
-    private String hoseProperty;
+    private String hose_property;
 
-    private Integer numberCars;
+    private Integer number_cars;
 
-    private String carBrand;
+    private String car_brand;
 
     private String currents;
 
@@ -40,29 +40,29 @@ public class CustomerInfo {
 
     private String loan;
 
-    private String heartDisease;
+    private String heart_disease;
 
-    private String typeInvestment;
+    private String type_investment;
 
-    private String carerSpouses;
+    private String carer_spouses;
 
-    private String familyPillar;
+    private String family_pillar;
 
     private String power;
 
-    private Integer numberSons;
+    private Integer number_sons;
 
-    private Integer numberDaughter;
+    private Integer number_daughter;
 
-    private String whetherBought;
+    private String whether_bought;
 
-    private String purposeInsurance;
+    private String purpose_insurance;
 
     private String precast;
 
-    private String recentlySpend;
+    private String recently_spend;
 
-    private String enterpriseAssets;
+    private String enterprise_assets;
 
 
 }
