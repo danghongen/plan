@@ -11,11 +11,11 @@ import java.util.List;
 public class CustomerInfoService {
     @Autowired
     private CustomerInfoMapper customerInfoMapper;
-
+//添加客户
     public void addCustomers(CustomerInfo customerInfo){
   customerInfoMapper.add(customerInfo);
     }
-
+//查询所有客户
     public List<CustomerInfo> allCustomers(){
     return customerInfoMapper.findCustomer();
     }
