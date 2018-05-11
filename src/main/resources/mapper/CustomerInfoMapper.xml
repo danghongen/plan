@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.plan.dao.CustomerInfoMapper" >
+  <insert id="add" parameterType="com.example.plan.entity.CustomerInfo">
+    INSERT INTO customer(username,usersexes,userages,education,positions,company,myIncome,spouseIncome,familyAssets,hoseProperty,numberCars,carBrand,currents,regular,financing,shares,loan,heartDisease,typeInvestment,carerSpouses,familyPillar,power,numberSons,numberDaughter,whetherBought,purposeInsurance,precast,recentlySpend,enterpriseAssets)  VALUES (#{username},#{usersexes},#{userages},#{education},#{positions},#{company},#{myIncome},#{spouseIncome},#{familyAssets},#{hoseProperty},#{numberCars},#{carBrand},#{currents},#{regular},#{financing},#{shares},#{loan},#{heartDisease},#{typeInvestment},#{carerSpouses},#{familyPillar},#{power},#{numberSons},#{numberDaughter},#{whetherBought},#{purposeInsurance},#{precast},#{recentlySpend},#{enterpriseAssets})
+  </insert>
+
+  <select id="findCustomer" resultType="com.example.plan.entity.CustomerInfo">
+    SELECT * FROM customer
+  </select>
+
+  <select id="findOne" resultType="com.example.plan.entity.CustomerInfo">
+    SELECT * FROM customer WHERE username=#{param1}
+  </select>
+</mapper>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.plan.dao.UserInfoMapper" >
+
+  <select id="login" resultType="com.example.plan.entity.UserInfo">
+    select * from acll where username=#{param1} and password=#{param2}
+  </select>
+
+  <select id="findOne" resultType="com.example.plan.entity.UserInfo">
+    SELECT * FROM acll WHERE username=#{param1}
+  </select>
+
+  <insert id="add" parameterType="com.example.plan.entity.UserInfo" >
+    INSERT into acll(username,usersexes,userages,password)  VALUES (#{username},#{usersexes},#{userages},#{password})
+  </insert>
+
+
+  <update id="update" parameterType="com.example.plan.entity.UserInfo">
+    UPDATE acll SET usersexes=#{usersexes},password=#{password},userages=#{userages},education=#{education},positions=#{positions},company=#{company},
+    honors=#{honors},qualifies=#{qualifies},employment_time=#{employment_time},service_quantity=#{service_quantity},service_type=#{service_type}
+    WHERE username=#{username}
+  </update>
+
+</mapper>
