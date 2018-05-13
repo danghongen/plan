@@ -25,7 +25,8 @@ public class DisabuseInfoController {
     }
 //通过问题查询答案
     @RequestMapping(value = "/findAnswer",method = RequestMethod.POST)
-    public DisabuseInfo findAnswer(DisabuseInfo disabuseInfo, @RequestBody DisabuseInfo disabuseParam){
+    public DisabuseInfo findAnswer( @RequestBody DisabuseInfo disabuseParam){
+        DisabuseInfo disabuseInfo=new DisabuseInfo();
         String problem=disabuseParam.getProblem();
         disabuseInfo.setProblem(problem);
       disabuseInfo=  this.disabuseInfoService.doFindAnswer(disabuseInfo);

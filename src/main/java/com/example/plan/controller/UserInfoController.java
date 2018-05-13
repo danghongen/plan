@@ -15,7 +15,8 @@ public class UserInfoController {
     private UserInfoService userInfoService;
 //注册
     @RequestMapping(value = "/register",method = RequestMethod.POST)
-    public String register(UserInfo userInfo,@RequestBody UserInfo userParam) {
+    public String register(@RequestBody UserInfo userParam) {
+        UserInfo userInfo=new UserInfo();
         String username = userParam.getUsername();
         String usersexes = userParam.getUsersexes();
         String userages = userParam.getUserages();
